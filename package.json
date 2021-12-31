@@ -1,0 +1,16 @@
+{
+  "name": "midastools",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@terra-money/terra.js": "^3.0.1",
+    "bottleneck": "^2.19.5",
+    "lodash": "^4.17.21"
+  }
+}
