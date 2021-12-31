@@ -16,7 +16,7 @@ const limiter = new Bottleneck({
 });
 
 // Spaceloot Address to query
-const CONTRACY_ADDRESS = "terra1q7jnhm5ju8zqua47yu3007879jncevt9ev4kk6";
+const CONTRACT_ADDRESS = "terra1q7jnhm5ju8zqua47yu3007879jncevt9ev4kk6";
 
 // Range and ids that we will query
 const START_ID = 0;
@@ -28,7 +28,7 @@ function generateQuery(id) {
   // we use `id_${id}`
   return `  
     id_${id}: WasmContractsContractAddressStore(
-      ContractAddress: "${CONTRACY_ADDRESS}",
+      ContractAddress: "${CONTRACT_ADDRESS}",
       QueryMsg: "{\\"owner_of\\":{\\"token_id\\":\\"${id}\\"}}"
     ) { 
       Result 
